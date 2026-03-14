@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Briyan de Jesús Chanona Hernández — Software Engineer</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+
+  <!-- Devicon -->
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <!-- ── NAV ── -->
+  <nav id="navbar">
+    <a href="#hero" class="nav-logo">BJDEV<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="#tech">Stack</a></li>
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#experience">Experiencia</a></li>
+      <li><a href="#blog">Blog</a></li>
+      <li><a href="#contact" class="nav-cta">Contacto</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#tech"        class="mobile-link">Stack</a>
+    <a href="#about"       class="mobile-link">Sobre mí</a>
+    <a href="#projects"    class="mobile-link">Proyectos</a>
+    <a href="#experience"  class="mobile-link">Experiencia</a>
+    <a href="#blog"        class="mobile-link">Blog</a>
+    <a href="#contact"     class="mobile-link">Contacto</a>
+  </div>
+
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="hero-left">
+      <span class="hero-tag">Disponible para trabajar</span>
+      <p class="hero-greeting"> Hola! Soy</p>
+      <h1 class="hero-name">Briyan<br><span class="highlight">Chanona</span></h1>
+      <p class="hero-title">Software Engineer · Backend Developer</p>
+      <p class="hero-desc">
+        Especializado en APIs escalables. Construyo sistemas robustos que resuelven problemas reales con código limpio y eficiente.
+      </p>
+      <ul class="hero-checks">
+        <li>Autenticidad y calidad en cada línea de código</li>
+        <li>Soluciones elegantes a problemas complejos</li>
+        <li>Compromiso con la excelencia técnica y el impacto real</li>
+      </ul>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">Ver Proyectos →</a>
+        <a href="https://drive.google.com/file/d/1m-5Oud9v2WrFuqgEfo69O6o8bO1rUzOo/view?usp=sharing"  class="btn-secondary">Descargar CV ↓</a>
+      </div>
+    </div>
+
+    <div class="hero-right">
+      <div class="hero-socials">
+        <a href="https://www.linkedin.com/in/briyan-chanona">LinkedIn</a>
+        <a href="https://github.com/bchanona/bchanona">GitHub</a>
+        <a href="https://x.com/bryan_chanona">X</a>
+      </div>
+      <div class="hero-photo-wrap">
+        <div class="hero-gradient-blob"></div>
+        
+        <img
+          class="hero-photo"
+          src="resources/foto_perfil.jpeg"
+          alt="Briyan Chanona"
+        />
+        <div class="hero-badge">
+          <strong>3</strong>años de experiencia<br>en desarrollo
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── TICKER ── -->
+  <div class="ticker-wrap" aria-hidden="true">
+    <div class="ticker-inner">
+      <span class="ticker-item"><span class="ticker-dot">✦</span> WEB DESIGN</span>
+      <span class="ticker-item"><span class="ticker-dot">✦</span> BACKEND DEV</span>
+      <span class="ticker-item"><span class="ticker-dot">✦</span> API DESIGN</span>
+      <span class="ticker-item"><span class="ticker-dot">✦</span> DEVOPS</span>
+      <!-- Duplicado para loop continuo -->
+      <span class="ticker-item"><span class="ticker-dot">✦</span> WEB DESIGN</span>
+      <span class="ticker-item"><span class="ticker-dot">✦</span> BACKEND DEV</span>
+      <span class="ticker-item"><span class="ticker-dot">✦</span> API DESIGN</span>
+      <span class="ticker-item"><span class="ticker-dot">✦</span> DEVOPS</span>
+    </div>
+  </div>
+
+  <!-- ── TECH STACK ── -->
+  <section id="tech">
+    <div class="tech-header">
+      <div>
+        <div class="section-label">Tecnologías</div>
+        <h2 class="section-title">MI STACK<br>TECNOLÓGICO</h2>
+      </div>
+      <p class="section-desc">Las herramientas con las que construyo soluciones de alto rendimiento.</p>
+    </div>
+    <div class="tech-grid">
+
+  <div class="tech-card">
+    <i class="devicon-javascript-plain colored tech-icon"></i>
+    <span class="tech-name">JavaScript</span>
+  </div>
+
+  <div class="tech-card">
+    <i class="devicon-java-plain colored tech-icon"></i>
+    <span class="tech-name">Java</span>
+  </div>
+
+  <div class="tech-card">
+    <i class="devicon-kotlin-plain colored tech-icon"></i>
+    <span class="tech-name">Kotlin</span>
+  </div>
+
+  <div class="tech-card">
+    <i class="devicon-go-original-wordmark colored tech-icon"></i>
+    <span class="tech-name">Go</span>
+  </div>
+
+  <div class="tech-card">
+    <i class="devicon-typescript-plain colored tech-icon"></i>
+    <span class="tech-name">TypeScript</span>
+  </div>
+
+  <div class="tech-card">
+    <i class="devicon-python-plain colored tech-icon"></i>
+    <span class="tech-name">Python</span>
+  </div>
+
+  <div class="tech-card">
+    <i class="devicon-nodejs-plain colored tech-icon"></i>
+    <span class="tech-name">Node.js</span>
+  </div>
+
+  <div class="tech-card">
+    <i class="devicon-angularjs-plain colored tech-icon"></i>
+    <span class="tech-name">Angular</span>
+  </div>
+
+  <div class="tech-card">
+    <i class="devicon-docker-plain colored tech-icon"></i>
+    <span class="tech-name">Docker</span>
+  </div>
+
+  <div class="tech-card">
+    <i class="devicon-amazonwebservices-plain-wordmark colored tech-icon"></i>
+    <span class="tech-name">AWS</span>
+  </div>
+
+  <div class="tech-card">
+    <i class="devicon-postgresql-plain colored tech-icon"></i>
+    <span class="tech-name">PostgreSQL</span>
+  </div>
+
+  <div class="tech-card">
+    <i class="devicon-mysql-plain colored tech-icon"></i>
+    <span class="tech-name">MySQL</span>
+  </div>
+
+</div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section id="about">
+    <div class="about-left reveal">
+      <div class="section-label">Sobre mí</div>
+      <h2 class="section-title">PASIÓN POR<br>EL CÓDIGO</h2>
+      <p class="about-text">
+        Estudiante de Ingeniería de Software con más de tres años de experiencia en el desarrollo de aplicaciones web, aplicaicones móviles y APIs de alto rendimiento. Especializado en backend. <br><br>
+        Disfruto trabajar en equipos ágiles donde el foco está en construir productos escalables con código limpio, bien documentado y orientado a resultados reales.
+      </p>
+      <div class="about-stats">
+        <div class="stat-item"><div class="stat-num">3</div><div class="stat-label">Años de experiencia</div></div>
+        <div class="stat-item"><div class="stat-num">10+</div><div class="stat-label">Proyectos realizados</div></div>
+        <div class="stat-item"><div class="stat-num">8</div><div class="stat-label">Tecnologías dominadas</div></div>
+      </div>
+    </div>
+    <div class="about-right reveal">
+      <div class="about-img-frame">
+        <img src="resources/foto_perfil.jpeg" alt="Trabajando en código" />
+        <div class="about-img-tag">Backend · Cloud · APIs · Frontend </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section id="projects">
+    <div class="projects-header">
+      <div>
+        <div class="section-label">Portafolio</div>
+        <h2 class="section-title">PROYECTOS<br>DESTACADOS</h2>
+      </div>
+      <p class="section-desc">Soluciones reales construidas con tecnología de punta para problemas de negocio concretos.</p>
+    </div>
+    <div class="projects-grid">
+
+      <div class="project-card">
+        <div class="project-img">
+          <div class="project-img-inner" style="background:linear-gradient(135deg,#0a2a1a,#1a4a2a)">🏥</div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Go</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">REST API</span>
+          </div>
+          <h3 class="project-title">Sistema WarmHeart</h3>
+          <p class="project-desc">Backend robusto para gestión de signos vitales </p>
+          <div class="project-impact"><span>Impacto:</span><span class="metric">Este proyecto ha sido de gran impacto en la eficiencia del proceso de monitoreo médico.</span></div>
+          <div class="project-links">
+            <a href="https://github.com/bchanona/vitals_warmheart_backend.git"" class="project-link">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img">
+          <div class="project-img-inner" style="background:linear-gradient(135deg,#0a0a2a,#1a1a4a)">📊</div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">MySQL</span>
+          </div>
+          <h3 class="project-title">Sistema WarmHeart</h3>
+          <p class="project-desc">API para datos estadisticos</p>
+          <div class="project-impact"><span>Impacto:</span><span class="metric">Este proyecto ha sido de gran impacto en la eficiencia del proceso de análisis de datos.</span></div>
+          <div class="project-links">
+            <a href="https://github.com/bchanona/analytics-backend.git" class="project-link">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img">
+          <div class="project-img-inner" style="background:linear-gradient(135deg,#2a1a0a,#4a2a0a)">📊</div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">React</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">Docker</span>
+            <span class="tag">CI/CD</span>
+          </div>
+          <h3 class="project-title">Chombi</h3>
+          <p class="project-desc">Api para una aplicación móvil que tiene como objetivo gestionar y administrar el control de las rutas de unidades de transporte público</p>
+          <div class="project-impact"><span>Impacto:</span><span class="metric">Este proyecto ha sido de gran impacto en la eficiencia del proceso de gestión de rutas.</span></div>
+          <div class="project-links">
+            <a href="https://github.com/bchanona/Api_chombi.git" class="project-link">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ── EXPERIENCE ── -->
+  <section id="experience">
+    <div class="exp-header">
+      <div>
+        <div class="section-label">Trayectoria</div>
+        <h2 class="section-title">EXPERIENCIA<br>PROFESIONAL</h2>
+      </div>
+      <p class="section-desc">Empresas donde he contribuido a construir productos que escalan.</p>
+    </div>
+    <div class="exp-list">
+
+  <!-- WarmHeart -->
+  <div class="exp-item">
+    <div class="exp-dot-wrap"><div class="exp-dot active"></div></div>
+    <div class="exp-body">
+      <div class="exp-role">Desarrollador Backend</div>
+      <div class="exp-company">WarmHeart</div>
+      <ul class="exp-bullets">
+        <li>Desarrollo backend en Go para la ingesta y procesamiento de signos vitales en tiempo real provenientes de sensores IoT.</li>
+        <li>Integración de mensajería con RabbitMQ para gestionar el flujo de eventos generados por los dispositivos.</li>
+        <li>Implementación de WebSockets para comunicación en tiempo real con el frontend.</li>
+        <li>Validación de métricas fisiológicas y manejo de umbrales críticos para detectar condiciones fuera de rango.</li>
+        <li>Implementación de arquitectura hexagonal para desacoplar dominio, aplicación e infraestructura.</li>
+      </ul>
+    </div>
+    <span class="exp-period">Febrero 2025 — Abril 2025</span>
+  </div>
+
+  <!-- AudUp -->
+  <div class="exp-item">
+    <div class="exp-dot-wrap"><div class="exp-dot"></div></div>
+    <div class="exp-body">
+      <div class="exp-role">Desarrollador Backend</div>
+      <div class="exp-company">AudUp</div>
+      <ul class="exp-bullets">
+        <li>Implementación del backend utilizando FastAPI, desarrollando el CRUD completo de asignaturas.</li>
+        <li>Diseño e implementación del CRUD de clases vinculadas jerárquicamente a cada asignatura.</li>
+        <li>Integración con PostgreSQL mediante definición de modelos, relaciones y consultas optimizadas.</li>
+        <li>Desarrollo de lógica para permitir que estudiantes se unan a asignaturas con validaciones y control de permisos.</li>
+        <li>Integración con la API de Google Drive para la carga y almacenamiento de archivos asociados a clases.</li>
+        <li>Diseño de endpoints REST siguiendo principios de Screaming Architecture combinados con arquitectura hexagonal.</li>
+      </ul>
+    </div>
+    <span class="exp-period">Agosto 2025</span>
+  </div>
+
+  <!-- AprendIA -->
+  <div class="exp-item">
+    <div class="exp-dot-wrap"><div class="exp-dot"></div></div>
+    <div class="exp-body">
+      <div class="exp-role">Desarrollador Frontend</div>
+      <div class="exp-company">AprendIA</div>
+      <ul class="exp-bullets">
+        <li>Desarrollo del frontend en Angular para la gestión de activos en una plataforma educativa orientada a la enseñanza del español escrito para personas sordas.</li>
+        <li>Implementación de formularios con validaciones estrictas, manejo de campos obligatorios y retroalimentación inmediata al usuario.</li>
+        <li>Carga y previsualización de imágenes SVG con manejo de errores y sanitización del contenido.</li>
+        <li>Desarrollo de un ejercicio interactivo basado en la selección de la letra correspondiente según la imagen mostrada.</li>
+        <li>Gestión de estados de la interfaz (carga, errores de obtención de activos y visualización de listas vacías).</li>
+        <li>Implementación de funcionalidad para copiar la URL de un activo directamente desde la interfaz.</li>
+        <li>Estructuración del frontend aplicando principios de DDD, Screaming Architecture y MVVM para asegurar mantenibilidad y separación de responsabilidades.</li>
+      </ul>
+    </div>
+    <span class="exp-period">Septiembre 2025 — Octubre 2025</span>
+  </div>
+
+</div>
+  </section>
+
+  <!-- ── SKILLS ── -->
+  <section id="skills">
+    <div class="section-label" style="color:#555">Habilidades</div>
+    <h2 class="section-title" style="color:var(--white)">COMPETENCIAS<br>TÉCNICAS</h2>
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <div class="skill-group-title">// Lenguajes</div>
+        <div class="skill-pills">
+          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">TypeScript</span>
+          <span class="skill-pill">Python</span>
+          <span class="skill-pill">SQL</span>
+          <span class="skill-pill">Bash</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">// Frameworks</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Node.js</span>
+          <span class="skill-pill">Express</span>
+          <span class="skill-pill">FastAPI</span>
+          <span class="skill-pill">Angular</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">// Herramientas</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Git</span>
+          <span class="skill-pill">Docker</span>
+          <span class="skill-pill">Nginx</span>
+          <span class="skill-pill">Linux</span>
+        </div>
+      </div>
+      <div class="skill-group reveal">
+        <div class="skill-group-title">// Cloud & DevOps</div>
+        <div class="skill-pills">
+          <span class="skill-pill">AWS EC2</span>
+          <span class="skill-pill">CI/CD</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GITHUB ── -->
+  <section id="github">
+    <div class="github-inner reveal">
+      <div>
+        <div class="section-label" style="color:#555">Open Source</div>
+        <h2 class="github-title">CÓDIGO PÚBLICO<br>EN GITHUB</h2>
+        <p class="github-desc">
+          Todos mis proyectos, experimentos y contribuciones a la comunidad de código abierto están disponibles para revisión. La calidad del código habla por sí sola.
+        </p>
+        <div class="github-stats">
+          <div class="gh-stat"><div class="gh-num">7</div><div class="gh-label">Repositorios</div></div>
+          <div class="gh-stat"><div class="gh-num">150</div><div class="gh-label">Commits / mes</div></div>
+        </div>
+        <a href="https://github.com/bchanona" target="_blank" rel="noopener" class="btn-primary" style="background:var(--accent);color:var(--black)">
+          Ver Perfil en GitHub →
+        </a>
+      </div>
+      
+      <div class="github-logo">
+        <i class="devicon-github-original-wordmark" style="font-size: 120px;"></i>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── CONTACT ── -->
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="contact-left reveal">
+        <div class="section-label">Contacto</div>
+        <h2 class="section-title" style="color:var(--white)">HABLEMOS<br>DE TU PROYECTO</h2>
+        <p class="contact-desc">
+          Estoy disponible para nuevas oportunidades laborales, proyectos freelance y colaboraciones. No dudes en escribirme.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:info@juanperez.dev" class="contact-link">
+            <div class="contact-link-icon">📧</div>
+            <div class="contact-link-body">
+              <div class="contact-link-label">Email</div>
+              <div class="contact-link-val">bh274266@gmail.com</div>
+            </div>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-link-icon">💼</div>
+            <div class="contact-link-body">
+              <div class="contact-link-label">LinkedIn</div>
+              <div class="contact-link-val">linkedin.com/in/briyan-chanona</div>
+            </div>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-link-icon">💻</div>
+            <div class="contact-link-body">
+              <div class="contact-link-label">GitHub</div>
+              <div class="contact-link-val">github.com/bchanona</div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="contact-right reveal">
+        <form class="contact-form" onsubmit="return false;">
+          <div class="form-group">
+            <label class="form-label">Nombre</label>
+            <input type="text" class="form-input" placeholder="Tu nombre completo" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-input" placeholder="tu@email.com" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Asunto</label>
+            <input type="text" class="form-input" placeholder="¿De qué se trata?" />
+          </div>
+          <div class="form-group">
+            <label class="form-label">Mensaje</label>
+            <textarea class="form-textarea" placeholder="Cuéntame sobre tu proyecto..."></textarea>
+          </div>
+          <button type="submit" class="form-btn">Enviar mensaje →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <p class="footer-copy">© 2025 <span>Briyan Chanona</span> · Diseñado y construido con el corazón</p>
+    <div class="footer-links">
+      <a href="#hero">Inicio</a>
+      <a href="#projects">Proyectos</a>
+      <a href="#contact">Contacto</a>
+    </div>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
