@@ -3,34 +3,29 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Portfolio - Briyan Chanona</title>
+  <title>Briyan Chanona - Software Engineer</title>
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <!-- Styles -->
   <link rel="stylesheet" href="styles.css" />
 
   <!-- Devicon -->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 </head>
 <body>
 
-  <!-- Custom cursor -->
-  <div class="cursor" id="cursor"></div>
-  <div class="cursor-follower" id="cursorFollower"></div>
-
   <!-- ── NAV ── -->
   <nav id="navbar">
-    <a href="#hero" class="nav-logo">BJDEV<span>.</span></a>
+    <a href="#hero" class="nav-logo">BJDEV</a>
     <ul class="nav-links">
       <li><a href="#tech">Stack</a></li>
       <li><a href="#about">Sobre mí</a></li>
       <li><a href="#projects">Proyectos</a></li>
       <li><a href="#experience">Experiencia</a></li>
-      <li><a href="#blog">Blog</a></li>
       <li><a href="#contact" class="nav-cta">Contacto</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Menú">
@@ -44,7 +39,6 @@
     <a href="#about"       class="mobile-link">Sobre mí</a>
     <a href="#projects"    class="mobile-link">Proyectos</a>
     <a href="#experience"  class="mobile-link">Experiencia</a>
-    <a href="#blog"        class="mobile-link">Blog</a>
     <a href="#contact"     class="mobile-link">Contacto</a>
   </div>
 
@@ -52,39 +46,48 @@
   <section id="hero">
     <div class="hero-left">
       <span class="hero-tag">Disponible para trabajar</span>
-      <p class="hero-greeting"> Hola! Soy</p>
+      <p class="hero-greeting">Hola! Soy</p>
       <h1 class="hero-name">Briyan<br><span class="highlight">Chanona</span></h1>
       <p class="hero-title">Software Engineer · Backend Developer</p>
       <p class="hero-desc">
-        Especializado en APIs escalables. Construyo sistemas robustos que resuelven problemas reales con código limpio y eficiente.
+        Ingeniero de Software en formación con enfoque en arquitectura escalable. Experiencia en Go, TypeScript y Flutter, aplicando Clean Architecture y DDD.
       </p>
       <ul class="hero-checks">
-        <li>Autenticidad y calidad en cada línea de código</li>
-        <li>Soluciones elegantes a problemas complejos</li>
+        <li>Arquitecturas limpias y escalables</li>
+        <li>Soluciones eficientes, mantenibles y seguras</li>
         <li>Compromiso con la excelencia técnica y el impacto real</li>
       </ul>
       <div class="hero-btns">
         <a href="#projects" class="btn-primary">Ver Proyectos →</a>
-        <a href="https://drive.google.com/file/d/1m-5Oud9v2WrFuqgEfo69O6o8bO1rUzOo/view?usp=sharing"  class="btn-secondary">Descargar CV ↓</a>
+        <a href="https://drive.google.com/file/d/1WUwlklQ4nZvCL0-WA5Xug-3LWYfFPH_M/view?usp=sharing" class="btn-secondary">Descargar CV ↓</a>
+      </div>
+      <div class="hero-social-row">
+        <a href="https://github.com/bchanona" target="_blank" rel="noopener" class="hero-social github" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/briyan-chanona" target="_blank" rel="noopener" class="hero-social linkedin" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/_bjdev_?igsh=MXF1cnhvM3U2bnVneg==" target="_blank" rel="noopener" class="hero-social instagram" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
       </div>
     </div>
 
     <div class="hero-right">
-      <div class="hero-socials">
-        <a href="https://www.linkedin.com/in/briyan-chanona">LinkedIn</a>
-        <a href="https://github.com/bchanona/bchanona">GitHub</a>
-        <a href="https://x.com/bryan_chanona">X</a>
-      </div>
-      <div class="hero-photo-wrap">
-        <div class="hero-gradient-blob"></div>
-        
+      <div class="hero-card">
         <img
-          class="hero-photo"
           src="resources/foto_perfil.jpeg"
           alt="Briyan Chanona"
         />
-        <div class="hero-badge">
-          <strong>3</strong>años de experiencia<br>en desarrollo
+        <div class="hero-badge-card">
+          <strong>3+</strong>años de experiencia<br>en desarrollo
         </div>
       </div>
     </div>
@@ -93,15 +96,18 @@
   <!-- ── TICKER ── -->
   <div class="ticker-wrap" aria-hidden="true">
     <div class="ticker-inner">
-      <span class="ticker-item"><span class="ticker-dot">✦</span> WEB DESIGN</span>
       <span class="ticker-item"><span class="ticker-dot">✦</span> BACKEND DEV</span>
+      <span class="ticker-item"><span class="ticker-dot">✦</span> CLEAN ARCHITECTURE</span>
       <span class="ticker-item"><span class="ticker-dot">✦</span> API DESIGN</span>
       <span class="ticker-item"><span class="ticker-dot">✦</span> DEVOPS</span>
-      <!-- Duplicado para loop continuo -->
-      <span class="ticker-item"><span class="ticker-dot">✦</span> WEB DESIGN</span>
+      <span class="ticker-item"><span class="ticker-dot">✦</span> GO & TYPESCRIPT</span>
+      <span class="ticker-item"><span class="ticker-dot">✦</span> CLOUD</span>
       <span class="ticker-item"><span class="ticker-dot">✦</span> BACKEND DEV</span>
+      <span class="ticker-item"><span class="ticker-dot">✦</span> CLEAN ARCHITECTURE</span>
       <span class="ticker-item"><span class="ticker-dot">✦</span> API DESIGN</span>
       <span class="ticker-item"><span class="ticker-dot">✦</span> DEVOPS</span>
+      <span class="ticker-item"><span class="ticker-dot">✦</span> GO & TYPESCRIPT</span>
+      <span class="ticker-item"><span class="ticker-dot">✦</span> CLOUD</span>
     </div>
   </div>
 
@@ -116,67 +122,77 @@
     </div>
     <div class="tech-grid">
 
-  <div class="tech-card">
-    <i class="devicon-javascript-plain colored tech-icon"></i>
-    <span class="tech-name">JavaScript</span>
-  </div>
+      <div class="tech-card">
+        <i class="devicon-go-original-wordmark colored tech-icon"></i>
+        <span class="tech-name">Go</span>
+      </div>
 
-  <div class="tech-card">
-    <i class="devicon-java-plain colored tech-icon"></i>
-    <span class="tech-name">Java</span>
-  </div>
+      <div class="tech-card">
+        <i class="devicon-typescript-plain colored tech-icon"></i>
+        <span class="tech-name">TypeScript</span>
+      </div>
 
-  <div class="tech-card">
-    <i class="devicon-kotlin-plain colored tech-icon"></i>
-    <span class="tech-name">Kotlin</span>
-  </div>
+      <div class="tech-card">
+        <i class="devicon-python-plain colored tech-icon"></i>
+        <span class="tech-name">Python</span>
+      </div>
 
-  <div class="tech-card">
-    <i class="devicon-go-original-wordmark colored tech-icon"></i>
-    <span class="tech-name">Go</span>
-  </div>
+      <div class="tech-card">
+        <i class="devicon-kotlin-plain colored tech-icon"></i>
+        <span class="tech-name">Kotlin</span>
+      </div>
 
-  <div class="tech-card">
-    <i class="devicon-typescript-plain colored tech-icon"></i>
-    <span class="tech-name">TypeScript</span>
-  </div>
+      <div class="tech-card">
+        <i class="devicon-java-plain colored tech-icon"></i>
+        <span class="tech-name">Java</span>
+      </div>
 
-  <div class="tech-card">
-    <i class="devicon-python-plain colored tech-icon"></i>
-    <span class="tech-name">Python</span>
-  </div>
+      <div class="tech-card">
+        <i class="devicon-javascript-plain colored tech-icon"></i>
+        <span class="tech-name">JavaScript</span>
+      </div>
 
-  <div class="tech-card">
-    <i class="devicon-nodejs-plain colored tech-icon"></i>
-    <span class="tech-name">Node.js</span>
-  </div>
+      <div class="tech-card">
+        <i class="devicon-nodejs-plain colored tech-icon"></i>
+        <span class="tech-name">Node.js</span>
+      </div>
 
-  <div class="tech-card">
-    <i class="devicon-angularjs-plain colored tech-icon"></i>
-    <span class="tech-name">Angular</span>
-  </div>
+      <div class="tech-card">
+        <i class="devicon-angularjs-plain colored tech-icon"></i>
+        <span class="tech-name">Angular</span>
+      </div>
 
-  <div class="tech-card">
-    <i class="devicon-docker-plain colored tech-icon"></i>
-    <span class="tech-name">Docker</span>
-  </div>
+      <div class="tech-card">
+        <i class="devicon-flutter-plain colored tech-icon"></i>
+        <span class="tech-name">Flutter</span>
+      </div>
 
-  <div class="tech-card">
-    <i class="devicon-amazonwebservices-plain-wordmark colored tech-icon"></i>
-    <span class="tech-name">AWS</span>
-  </div>
+      <div class="tech-card">
+        <i class="devicon-docker-plain colored tech-icon"></i>
+        <span class="tech-name">Docker</span>
+      </div>
 
-  <div class="tech-card">
-    <i class="devicon-postgresql-plain colored tech-icon"></i>
-    <span class="tech-name">PostgreSQL</span>
-  </div>
+      <div class="tech-card">
+        <i class="devicon-amazonwebservices-plain-wordmark colored tech-icon"></i>
+        <span class="tech-name">AWS</span>
+      </div>
 
-  <div class="tech-card">
-    <i class="devicon-mysql-plain colored tech-icon"></i>
-    <span class="tech-name">MySQL</span>
-  </div>
+      <div class="tech-card">
+        <i class="devicon-postgresql-plain colored tech-icon"></i>
+        <span class="tech-name">PostgreSQL</span>
+      </div>
 
-</div>
+      <div class="tech-card">
+        <i class="devicon-mysql-plain colored tech-icon"></i>
+        <span class="tech-name">MySQL</span>
+      </div>
+
+      <div class="tech-card">
+        <i class="devicon-graphql-plain colored tech-icon"></i>
+        <span class="tech-name">GraphQL</span>
+      </div>
+
+    </div>
   </section>
 
   <!-- ── ABOUT ── -->
@@ -185,19 +201,18 @@
       <div class="section-label">Sobre mí</div>
       <h2 class="section-title">PASIÓN POR<br>EL CÓDIGO</h2>
       <p class="about-text">
-        Estudiante de Ingeniería de Software con más de tres años de experiencia en el desarrollo de aplicaciones web, aplicaciones móviles y APIs de alto rendimiento. Especializado en backend. <br><br>
-        Disfruto trabajar en equipos ágiles donde el foco está en construir productos escalables con código limpio, bien documentado y orientado a resultados reales.
+        Ingeniero de Software en formación con enfoque en arquitectura escalable y desarrollo Full-Stack. Experiencia técnica demostrada en Go, TypeScript y Flutter, aplicando principios de Clean Architecture y DDD. Orientado a la resolución de problemas complejos mediante soluciones eficientes, mantenibles y seguras.
       </p>
       <div class="about-stats">
-        <div class="stat-item"><div class="stat-num">3</div><div class="stat-label">Años de experiencia</div></div>
+        <div class="stat-item"><div class="stat-num">3+</div><div class="stat-label">Años de experiencia</div></div>
         <div class="stat-item"><div class="stat-num">10+</div><div class="stat-label">Proyectos realizados</div></div>
-        <div class="stat-item"><div class="stat-num">8</div><div class="stat-label">Tecnologías dominadas</div></div>
+        <div class="stat-item"><div class="stat-num">15+</div><div class="stat-label">Tecnologías dominadas</div></div>
       </div>
     </div>
     <div class="about-right reveal">
       <div class="about-img-frame">
-        <img src="resources/foto_perfil.jpeg" alt="Trabajando en código" />
-        <div class="about-img-tag">Backend · Cloud · APIs · Frontend </div>
+        <img src="resources/foto_perfil.jpeg" alt="Briyan Chanona" />
+        <div class="about-img-tag">Backend · Cloud · APIs · Mobile</div>
       </div>
     </div>
   </section>
@@ -215,7 +230,7 @@
 
       <div class="project-card">
         <div class="project-img">
-          <div class="project-img-inner" style="background:linear-gradient(135deg,#0a2a1a,#1a4a2a)">🏥</div>
+          <div class="project-img-inner" style="background:linear-gradient(135deg,#0B2E86,#2F63D6)">🏥</div>
         </div>
         <div class="project-body">
           <div class="project-tags">
@@ -223,19 +238,21 @@
             <span class="tag">Gin</span>
             <span class="tag">MySQL</span>
             <span class="tag">REST API</span>
+            <span class="tag">RabbitMQ</span>
+            <span class="tag">WebSockets</span>
           </div>
           <h3 class="project-title">Sistema WarmHeart</h3>
-          <p class="project-desc">Backend robusto para gestión de signos vitales </p>
-          <div class="project-impact"><span>Impacto:</span><span class="metric">Este proyecto ha sido de gran impacto en la eficiencia del proceso de monitoreo médico.</span></div>
+          <p class="project-desc">Backend para ingesta y procesamiento de signos vitales en tiempo real provenientes de sensores IoT.</p>
+          <div class="project-impact"><span>Impacto:</span><span class="metric">Monitoreo médico en tiempo real con detección de umbrales críticos.</span></div>
           <div class="project-links">
-            <a href="https://github.com/bchanona/vitals_warmheart_backend.git"" class="project-link">GitHub ↗</a>
+            <a href="https://github.com/bchanona/vitals_warmheart_backend.git" class="project-link">GitHub ↗</a>
           </div>
         </div>
       </div>
 
       <div class="project-card">
         <div class="project-img">
-          <div class="project-img-inner" style="background:linear-gradient(135deg,#0a0a2a,#1a1a4a)">📊</div>
+          <div class="project-img-inner" style="background:linear-gradient(135deg,#0B2E86,#2F63D6)">📊</div>
         </div>
         <div class="project-body">
           <div class="project-tags">
@@ -244,9 +261,9 @@
             <span class="tag">MySQL</span>
             <span class="tag">REST API</span>
           </div>
-          <h3 class="project-title">Sistema WarmHeart</h3>
-          <p class="project-desc">API para datos estadisticos</p>
-          <div class="project-impact"><span>Impacto:</span><span class="metric">Este proyecto ha sido de gran impacto en la eficiencia del proceso de análisis de datos.</span></div>
+          <h3 class="project-title">Sistema WarmHeart Analytics</h3>
+          <p class="project-desc">API para datos estadísticos con arquitectura hexagonal y Screaming Architecture.</p>
+          <div class="project-impact"><span>Impacto:</span><span class="metric">Análisis de datos con validaciones estrictas y control de accesos.</span></div>
           <div class="project-links">
             <a href="https://github.com/bchanona/analytics-backend.git" class="project-link">GitHub ↗</a>
           </div>
@@ -255,7 +272,7 @@
 
       <div class="project-card">
         <div class="project-img">
-          <div class="project-img-inner" style="background:linear-gradient(135deg,#2a1a0a,#4a2a0a)">🚌</div>
+          <div class="project-img-inner" style="background:linear-gradient(135deg,#0B2E86,#2F63D6)">🚌</div>
         </div>
         <div class="project-body">
           <div class="project-tags">
@@ -265,10 +282,32 @@
             <span class="tag">REST API</span>
           </div>
           <h3 class="project-title">Chombi</h3>
-          <p class="project-desc">Api para una aplicación móvil que tiene como objetivo gestionar y administrar el control de las rutas de unidades de transporte público</p>
-          <div class="project-impact"><span>Impacto:</span><span class="metric">Este proyecto ha sido de gran impacto en la eficiencia del proceso de gestión de rutas.</span></div>
+          <p class="project-desc">API para gestión y administración de rutas de transporte público.</p>
+          <div class="project-impact"><span>Impacto:</span><span class="metric">Optimización de rutas con procesamiento eficiente de datos.</span></div>
           <div class="project-links">
             <a href="https://github.com/bchanona/Api_chombi.git" class="project-link">GitHub ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-img">
+          <div class="project-img-inner" style="background:linear-gradient(135deg,#0B2E86,#2F63D6)">🎓</div>
+        </div>
+        <div class="project-body">
+          <div class="project-tags">
+            <span class="tag">Go</span>
+            <span class="tag">GraphQL</span>
+            <span class="tag">JWT</span>
+            <span class="tag">Docker</span>
+            <span class="tag">AWS EC2</span>
+            <span class="tag">DDD</span>
+          </div>
+          <h3 class="project-title">SAAU</h3>
+          <p class="project-desc">Sistema de educación. API GraphQL robusta en Go con Arquitectura Hexagonal y patrones DDD.</p>
+          <div class="project-impact"><span>Impacto:</span><span class="metric">Autenticación JWT con rotación de tokens, rate limiting (100 req/s) y despliegue automatizado en AWS.</span></div>
+          <div class="project-links">
+            <a href="https://github.com/bchanona" class="project-link">GitHub ↗</a>
           </div>
         </div>
       </div>
@@ -287,103 +326,142 @@
     </div>
     <div class="exp-list">
 
-  <!-- WarmHeart -->
-  <div class="exp-item">
-    <div class="exp-dot-wrap"><div class="exp-dot active"></div></div>
-    <div class="exp-body">
-      <div class="exp-role">Desarrollador Backend</div>
-      <div class="exp-company">WarmHeart</div>
-      <ul class="exp-bullets">
-        <li>Desarrollo backend en Go para la ingesta y procesamiento de signos vitales en tiempo real provenientes de sensores IoT.</li>
-        <li>Integración de mensajería con RabbitMQ para gestionar el flujo de eventos generados por los dispositivos.</li>
-        <li>Implementación de WebSockets para comunicación en tiempo real con el frontend.</li>
-        <li>Validación de métricas fisiológicas y manejo de umbrales críticos para detectar condiciones fuera de rango.</li>
-        <li>Implementación de arquitectura hexagonal para desacoplar dominio, aplicación e infraestructura.</li>
-      </ul>
-    </div>
-    <span class="exp-period">Febrero 2025 — Abril 2025</span>
-  </div>
+      <div class="exp-item">
+        <div class="exp-dot-wrap"><div class="exp-dot active"></div></div>
+        <div class="exp-body">
+          <div class="exp-role">Desarrollador Backend</div>
+          <div class="exp-company">Universidad Politécnica de Chiapas · Estancia Industrial</div>
+          <ul class="exp-bullets">
+            <li>Arquitecté una API REST utilizando Arquitectura Hexagonal y Screaming Architecture, logrando un aislamiento total de la lógica de negocio frente a dependencias externas.</li>
+            <li>Implementé con FastAPI la gestión jerárquica de asignaturas junto con un sistema de inscripciones automatizado, incorporando estrictas validaciones de datos y control de accesos.</li>
+            <li>Diseñé el modelado y optimización de consultas en PostgreSQL, e integré la API de Google Drive para el almacenamiento y carga segura de archivos del sistema.</li>
+          </ul>
+        </div>
+        <span class="exp-period">2025</span>
+      </div>
 
-  <!-- AudUp -->
-  <div class="exp-item">
-    <div class="exp-dot-wrap"><div class="exp-dot"></div></div>
-    <div class="exp-body">
-      <div class="exp-role">Desarrollador Backend</div>
-      <div class="exp-company">AudUp</div>
-      <ul class="exp-bullets">
-        <li>Implementación del backend utilizando FastAPI, desarrollando el CRUD completo de asignaturas.</li>
-        <li>Diseño e implementación del CRUD de clases vinculadas jerárquicamente a cada asignatura.</li>
-        <li>Integración con PostgreSQL mediante definición de modelos, relaciones y consultas optimizadas.</li>
-        <li>Desarrollo de lógica para permitir que estudiantes se unan a asignaturas con validaciones y control de permisos.</li>
-        <li>Integración con la API de Google Drive para la carga y almacenamiento de archivos asociados a clases.</li>
-        <li>Diseño de endpoints REST siguiendo principios de Screaming Architecture combinados con arquitectura hexagonal.</li>
-      </ul>
-    </div>
-    <span class="exp-period">Agosto 2025</span>
-  </div>
+      <div class="exp-item">
+        <div class="exp-dot-wrap"><div class="exp-dot"></div></div>
+        <div class="exp-body">
+          <div class="exp-role">Desarrollador Frontend</div>
+          <div class="exp-company">Universidad Politécnica de Chiapas · Estancia Industrial</div>
+          <ul class="exp-bullets">
+            <li>Estructuré el frontend aplicando principios de DDD, MVVM y Screaming Architecture, garantizando una separación clara de responsabilidades y un código altamente mantenible.</li>
+            <li>Construí módulos interactivos en Angular para una plataforma educativa dirigida a personas sordas, desarrollando formularios dinámicos con validación estricta y un sistema de evaluación visual interactivo.</li>
+            <li>Mitigué riesgos de seguridad mediante la sanitización preventiva en la carga de archivos SVG y gestioné de forma robusta los estados globales de la interfaz.</li>
+          </ul>
+        </div>
+        <span class="exp-period">2025</span>
+      </div>
 
-  <!-- AprendIA -->
-  <div class="exp-item">
-    <div class="exp-dot-wrap"><div class="exp-dot"></div></div>
-    <div class="exp-body">
-      <div class="exp-role">Desarrollador Frontend</div>
-      <div class="exp-company">AprendIA</div>
-      <ul class="exp-bullets">
-        <li>Desarrollo del frontend en Angular para la gestión de activos en una plataforma educativa orientada a la enseñanza del español escrito para personas sordas.</li>
-        <li>Implementación de formularios con validaciones estrictas, manejo de campos obligatorios y retroalimentación inmediata al usuario.</li>
-        <li>Carga y previsualización de imágenes SVG con manejo de errores y sanitización del contenido.</li>
-        <li>Desarrollo de un ejercicio interactivo basado en la selección de la letra correspondiente según la imagen mostrada.</li>
-        <li>Gestión de estados de la interfaz (carga, errores de obtención de activos y visualización de listas vacías).</li>
-        <li>Implementación de funcionalidad para copiar la URL de un activo directamente desde la interfaz.</li>
-        <li>Estructuración del frontend aplicando principios de DDD, Screaming Architecture y MVVM para asegurar mantenibilidad y separación de responsabilidades.</li>
-      </ul>
-    </div>
-    <span class="exp-period">Septiembre 2025 — Octubre 2025</span>
-  </div>
+      <div class="exp-item">
+        <div class="exp-dot-wrap"><div class="exp-dot"></div></div>
+        <div class="exp-body">
+          <div class="exp-role">Desarrollador Backend</div>
+          <div class="exp-company">WarmHeart · Sistema IoT</div>
+          <ul class="exp-bullets">
+            <li>Desarrollé un backend en Go para ingesta y procesamiento de signos vitales en tiempo real.</li>
+            <li>Integré RabbitMQ para el flujo de eventos desde sensores IoT.</li>
+            <li>Implementé WebSockets para comunicación instantánea con el frontend.</li>
+            <li>Validé métricas fisiológicas y manejo de umbrales críticos.</li>
+            <li>Arquitectura hexagonal para desacoplamiento entre dominio, aplicación e infraestructura.</li>
+          </ul>
+        </div>
+        <span class="exp-period">2024</span>
+      </div>
 
-</div>
+      <div class="exp-item">
+        <div class="exp-dot-wrap"><div class="exp-dot"></div></div>
+        <div class="exp-body">
+          <div class="exp-role">Desarrollador Backend</div>
+          <div class="exp-company">SAAU · Sistema de Educación</div>
+          <ul class="exp-bullets">
+            <li>Implementé una API GraphQL robusta en Go utilizando Arquitectura Hexagonal y patrones de diseño (DDD).</li>
+            <li>Integré autenticación JWT con rotación de tokens, rate limiting (100 req/s) y medidas de seguridad HTTP.</li>
+            <li>Automaticé el despliegue en AWS EC2 usando Docker (multi-stage builds) y Nginx.</li>
+          </ul>
+        </div>
+        <span class="exp-period">2026</span>
+      </div>
+
+    </div>
   </section>
 
   <!-- ── SKILLS ── -->
   <section id="skills">
-    <div class="section-label" style="color:#555">Habilidades</div>
+    <div class="section-label" style="color:var(--gray-light)">Habilidades</div>
     <h2 class="section-title" style="color:var(--white)">COMPETENCIAS<br>TÉCNICAS</h2>
     <div class="skills-grid">
+
       <div class="skill-group reveal">
         <div class="skill-group-title">// Lenguajes</div>
         <div class="skill-pills">
-          <span class="skill-pill">JavaScript</span>
+          <span class="skill-pill">Go</span>
           <span class="skill-pill">TypeScript</span>
           <span class="skill-pill">Python</span>
+          <span class="skill-pill">JavaScript</span>
           <span class="skill-pill">SQL</span>
+          <span class="skill-pill">Kotlin</span>
+          <span class="skill-pill">Java</span>
           <span class="skill-pill">Bash</span>
         </div>
       </div>
+
       <div class="skill-group reveal">
-        <div class="skill-group-title">// Frameworks</div>
+        <div class="skill-group-title">// Backend</div>
         <div class="skill-pills">
+          <span class="skill-pill">NestJS</span>
+          <span class="skill-pill">FastAPI</span>
           <span class="skill-pill">Node.js</span>
           <span class="skill-pill">Express</span>
-          <span class="skill-pill">FastAPI</span>
-          <span class="skill-pill">Angular</span>
+          <span class="skill-pill">PostgreSQL</span>
+          <span class="skill-pill">MySQL</span>
         </div>
       </div>
+
+      <div class="skill-group reveal">
+        <div class="skill-group-title">// Frontend & Mobile</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Flutter</span>
+          <span class="skill-pill">Angular</span>
+          <span class="skill-pill">Jetpack Compose</span>
+          <span class="skill-pill">MVVM</span>
+          <span class="skill-pill">Clean Architecture</span>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <div class="skill-group-title">// Arquitectura</div>
+        <div class="skill-pills">
+          <span class="skill-pill">Arquitectura Hexagonal</span>
+          <span class="skill-pill">Clean Architecture</span>
+          <span class="skill-pill">DDD</span>
+          <span class="skill-pill">REST</span>
+          <span class="skill-pill">GraphQL</span>
+          <span class="skill-pill">Screaming Architecture</span>
+        </div>
+      </div>
+
       <div class="skill-group reveal">
         <div class="skill-group-title">// Herramientas</div>
         <div class="skill-pills">
           <span class="skill-pill">Git</span>
           <span class="skill-pill">Docker</span>
           <span class="skill-pill">Nginx</span>
+          <span class="skill-pill">RabbitMQ</span>
           <span class="skill-pill">Linux</span>
         </div>
       </div>
+
       <div class="skill-group reveal">
         <div class="skill-group-title">// Cloud & DevOps</div>
         <div class="skill-pills">
           <span class="skill-pill">AWS EC2</span>
           <span class="skill-pill">CI/CD</span>
+          <span class="skill-pill">JWT</span>
         </div>
       </div>
+
     </div>
   </section>
 
@@ -391,7 +469,7 @@
   <section id="github">
     <div class="github-inner reveal">
       <div>
-        <div class="section-label" style="color:#555">Open Source</div>
+        <div class="section-label" style="color:var(--gray-light)">Open Source</div>
         <h2 class="github-title">CÓDIGO PÚBLICO<br>EN GITHUB</h2>
         <p class="github-desc">
           Todos mis proyectos, experimentos y contribuciones a la comunidad de código abierto están disponibles para revisión. La calidad del código habla por sí sola.
@@ -400,13 +478,15 @@
           <div class="gh-stat"><div class="gh-num">7</div><div class="gh-label">Repositorios</div></div>
           <div class="gh-stat"><div class="gh-num">150</div><div class="gh-label">Commits / mes</div></div>
         </div>
-        <a href="https://github.com/bchanona" target="_blank" rel="noopener" class="btn-primary" style="background:var(--accent);color:var(--black)">
+        <a href="https://github.com/bchanona" target="_blank" rel="noopener" class="btn-primary" style="background:var(--white);color:var(--primary)">
           Ver Perfil en GitHub →
         </a>
       </div>
-      
+
       <div class="github-logo">
-        <i class="devicon-github-original-wordmark" style="font-size: 120px;"></i>
+        <svg viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+        </svg>
       </div>
     </div>
   </section>
@@ -421,22 +501,35 @@
           Estoy disponible para nuevas oportunidades laborales, proyectos freelance y colaboraciones. No dudes en escribirme.
         </p>
         <div class="contact-links">
-          <a href="mailto:info@juanperez.dev" class="contact-link">
-            <div class="contact-link-icon">📧</div>
+          <a href="mailto:bh274266@gmail.com" class="contact-link">
+            <div class="contact-link-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+            </div>
             <div class="contact-link-body">
               <div class="contact-link-label">Email</div>
               <div class="contact-link-val">bh274266@gmail.com</div>
             </div>
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-link">
-            <div class="contact-link-icon">💼</div>
+          <a href="https://www.linkedin.com/in/bjdev" target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-link-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+              </svg>
+            </div>
             <div class="contact-link-body">
               <div class="contact-link-label">LinkedIn</div>
-              <div class="contact-link-val">linkedin.com/in/briyan-chanona</div>
+              <div class="contact-link-val">linkedin.com/in/bjdev</div>
             </div>
           </a>
-          <a href="https://github.com" target="_blank" rel="noopener" class="contact-link">
-            <div class="contact-link-icon">💻</div>
+          <a href="https://github.com/bchanona" target="_blank" rel="noopener" class="contact-link">
+            <div class="contact-link-icon">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              </svg>
+            </div>
             <div class="contact-link-body">
               <div class="contact-link-label">GitHub</div>
               <div class="contact-link-val">github.com/bchanona</div>
